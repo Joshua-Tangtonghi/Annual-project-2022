@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a503d048-3801-49d1-adfe-b074f633ef47" name="lol" url="https://openges.ddns.net">
+        <fileTransfer rootFolder="/home/debian" accessType="SFTP" host="51.254.35.187" port="22" sshConfigId="319fcd8b-3e29-4ddb-bece-cc989de34075" sshConfig="debian@51.254.35.187:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+/*@font-face {
+    font-family: "Monument Extended";
+    src: url("../fonts/MonumentExtended-Regular.otf") format("otf"),
+         url("../fonts/MonumentExtended-Ultrabold.otf") format("otf");
+   }*/
+
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+   
+/*body {
+    font-family: 'Montserrat', sans-serif;
+}*/
+
+:root {
+    --dark-body: #29292f;
+    --dark-main: #141529;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+
+    --blue:#001b40;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: cursive;
+}
+.toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.dark-mode-switch {
+    position: relative;
+    width: 48px;
+    height: 22px;
+    border-radius: 14px;
+    background-color: var(--bg-second);
+    cursor: pointer;
+}
+
+.dark-mode-switch-ident {
+    width: 21px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: var(--bg-main);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.2s ease-in-out;
+}
+
+.dark .dark-mode-switch .dark-mode-switch-ident {
+    top: 2px;
+    left: calc(2px + 50%);
+}
+
+.dark {
+    --bg-body: var(--dark-body);
+    --bg-main: var(--dark-main);
+    --bg-second: var(--dark-second);
+    --color-hover: var(--dark-hover);
+    --color-txt: var(--dark-text);
+    --color-heder:var(--dark-text);
+
+}
+
+.light {
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-main);
+    --bg-second: var(--light-second);
+    --color-hover: var(--light-hover);
+    --color-txt: var(--light-text);
+    --color-heder:var(--blue);
+    --color-footer:var(--white) ;
+}
+
+*{
+    font-family: "Monument Extended";
+    box-sizing: border-box;
+    margin:0;
+}
+html,
+body {
+    color: var(--color-txt);;
+    background-color: var(--bg-body);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.header-right {
+    display: none;
+}
+
+.navbar-item {
+   color:var(--color-heder);
+    padding: 10px;
+}
+
+.navbar-item:hover {
+    color: #00eaff;
+    text-decoration: none;
+}
+
+.rectangle {
+    height: 600px;
+    width: 1500px;
+    background-color: #00eaff;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+.bold {
+    font-weight: 600;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.header {
+    padding-top: 35px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 999;
+}
+
+.logo {
+    max-width: 60px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.header-btn {
+    background-color: #FFDE00;
+    border-radius: 10px;
+    border: #FFDE00;
+    float: right;
+    width: 195px;
+    height: 51px;
+    color: #001b40;
+    transition-duration: 0.4s;
+    margin-top: -10px;
+}
+
+.header-btn:hover {
+    background-color: #001b40;
+    color: white;
+    border-radius: 20px;
+    box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+}
+
+.header-headline-1 {
+    padding-top: 150px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 80px;
+    color:var(--color-heder);
+
+}
+
+.header-headline-2 {
+    padding-bottom: 30px;
+    padding-left: 70px;
+    text-align: left;
+    font-size: 100px;
+    color:var(--color-heder);
+
+}
+
+.header-running-text {
+    text-align: center;
+    max-width: 287px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.presentation-text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.underline {
+    height: 30px;
+    width: 630px;
+    background-color: #00eaff;
+}
+
+.axes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+
+}
+.axes .line{
+    display: flex;
+}
+.line {
+    height: 4px;
+    width: 50px;
+    background-color: #FFDE00;
+}
+
+
+footer{
+    margin-left: 5%;
+    margin-right: 5%;
+
+    justify-content: center;
+}
+.footer {
+    background-color: #001b40;
+    color: var(--color-footer);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+
+.social-links {
+    float: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social-link {
+    margin-right: 15px;
+}
+
+.strips {
+    position: absolute;
+    max-width: 1280px;
+}
+
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Monument Extended';
+    text-align: center;
+}
+
+#liens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#liens .link_axe{
+    width: 16vw;
+    min-width: 300px;
+    height: 16vw;
+    min-height: 300px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    transition: 500ms;
+    background-color: #001b40;
+}
+
+#liens .link_axe:hover{
+    background-color: #ffdd00f5;
+    border-radius: 20px;
+    box-shadow: -1px 9px 46px -17px rgb(67, 67, 67);
+}
+
+#liens a{
+    text-decoration: none;
+    color: #001b40;
+    font-family: 'Monument Extended';
+    font-size: 20px;
+}
+
+/*.img_axe {
+    width: 16vw;
+    height: 16vw;
+}*/
+
+#assoc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#assoc .link_axe{
+    width: 16vw;
+    min-width: 300px;
+    height: 16vw;
+    min-height: 300px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    transition: 500ms;
+    background-color: #001b40;
+
+    top: 0;
+    left: 0;
+}
+
+#assoc .link_axe:hover{
+    background-color: #ffdd00f5;
+    border-radius: 20px;
+    box-shadow: -1px 9px 46px -17px rgb(67, 67, 67);
+}
+
+#assoc a{
+    text-decoration: none;
+    color: #001b40;
+    font-family: 'Monument Extended';
+    font-size: 13px;
+}
